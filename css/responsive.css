@@ -17,3 +17,31 @@
     }
 
 }
+
+@media screen and (max-width:700px){
+    #home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 120dvh;
+    }   
+    .home_des{
+        font-size: 30px;
+    }
+    .social{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+
+    .about-info{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .logo
+    {
+        font-size: 20px;
+    }
+}
