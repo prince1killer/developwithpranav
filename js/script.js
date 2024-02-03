@@ -1,6 +1,10 @@
 let wname = document.querySelector(".home_des_des")
 let count = 0;
 let wnameList = ["Developer","Designer","Blogger","Youtuber"]
+console.log(wname.innerHTML)
+if(wname.innerHTML == ""){
+    wname.innerHTML = "Developer"
+}
 setInterval(()=>{
     
         wname.innerHTML = wnameList[count]

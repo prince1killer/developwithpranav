@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
-    <!-- ====================================== Navbar ======================================= -->
-    <div class="nav">
-        <div class="logo">DevelopWithPranav</div>
-        <div class="nav-list" >
-            <button class="menu" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-list-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
+  <!-- ====================================== Navbar ======================================= -->
+  <div class="nav">
+    <div class="logo">DevelopWithPranav</div>
+    <div class="nav-list">
+      <button class="menu" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-list-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ========================================== Home ===================================== -->
+  <section class="home" id="home">
+    <div class="home_des">
+      <div>
+        <div class="home_des_name">hi,</div>
+        <div>I am a</div>
+        <div class="home_des_des"></div>
+        <div class="social-icon">
+          <i class="fa-brands fa-linkedin-in social"></i>
+          <i class="fa-brands fa-instagram social"></i>
+        </div>
+      </div>
+    </div>
+    <div class="home_img"><img src="images/web-developer.svg" alt=""></div>
+
+  </section>
+  <!-- ========================================== About ===================================== -->
+  <section id='about' class='section about'>
+    <div class="title">About</div>
+    <div class="about-info">
+      <div class="about-img">
+        <div class="about-img-content">
+          <div class="about_img_border"></div>
+          <img src="images/Aboutphoto.png" alt="my-photo" />
+        </div>
+      </div>
+      <div class="about-dis">
+        <p>Hi, I am
+          Pranav Kumar a dynamic professional with a BSc in Microbiology and a year of experience in web development and
+          teaching. Passionate about the intersection of science and technology, he is a quick learner and enthusiastic
+          about expanding his skills in programming, design, and 3D animation. Pranav's unique blend of scientific
+          knowledge and technical expertise positions him as a versatile and forward-thinking individual in the
+          ever-evolving realm of technology.</p>
+          <button onclick="downloadcv()">Download CV</button>
         </div>
     </div>
-    <!-- ========================================== Home ===================================== -->
-    <section class="home" id="home">
-        <div class="home_des">
-          <div>
-            <div class="home_des_name">hi,</div>
-            <div>I am a</div>
-            <div class="home_des_des"></div>
 
-          </div>
-        </div>
-        <div class="home_img"></div>
 
-    </section>
-    <!-- ========================================== About ===================================== -->
-    <section id='about' class='section about'>
-        <div class="title">About</div>
-        <div class="about-info">
-          <div class="about-img"><img src="images/Aboutphoto.png" alt="my-photo" /></div>
-          <div class="about-dis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore atque rem tenetur reprehenderit ullam sit animi nihil saepe, dicta pariatur consectetur veniam velit assumenda expedita doloribus aliquam. Cum, temporibus saepe.</div>
-        </div>
-        <div class="about-topic">
-          <div class="about-topic-front about-topic-icons">
-            <img src="images/html.png" alt="blender" />
-            <img src="images/js.png" alt="blender" />
-            <img src="images/css3.png" alt="blender" />
-            <img src="images/react.png" alt="react" />
-          </div>
-          <div class="about-topic-backend about-topic-icons">
-            
-          </div>
-          <div class="about-topic-desgin about-topic-icons">
-            <img src="images/photoshop.png" alt="photoshop" />
-            <img src="images/illustrator.png" alt="" />
-            <img src="images/blender.png" alt="blender" />
-            <img src="images/after-effects.png" alt="after effect" />
-              
-          </div>
-          <div class="about-topic-data about-topic-icons">
-            <img src="images/images/sql.png" alt="sql" />
-            <img src="images/docker.png" alt="docker" />
-          </div>
-          <div class="about-topic-program about-topic-icons">
-            <img src="images/cpp.png" alt="cpp" />
-            <img src="images/c.png" alt="c" />
-            <img src="images/python.png" alt="pytohn" />
-            <img src="images/java.png" alt="java" />
-          </div>
-          <img src="images/electronjs.png" alt="electron" />
-          <img src="images/github.png" alt="github" />
-          <img src="images/nodejs.png" alt="nodejs" />
-  
-        </div>
-      </section>
+    <div class="about-topic">
+      <div class="about-topic-box">
+        <div class="about-topic-title">Front-end Development</div>
+        <div class="about-topic-cont"></div>
+      </div>
+      <div class="about-topic-box">
+        <div class="about-topic-title">Front-end Development</div>
+      </div>
+      <div class="about-topic-box">
+        <div class="about-topic-title">Front-end Development</div>
+      </div>
+      <div class="about-topic-box">
+        <div class="about-topic-title">Front-end Development</div>
+      </div>
+    </div>  
+  </section>
 </body>
 <script src="./js/script.js"></script>
+
 </html>

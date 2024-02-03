@@ -3,7 +3,9 @@
 :root{
   --normal-text: Caveat;
   --title-text: Permanent Marker;
-  --font-color: white;
+  --font-color: aqua;
+  --border-color-about:rgb(69, 253, 210);
+
 }
 
 *{
@@ -13,7 +15,7 @@
 }
 
 body{
-    background-color: rgb(44, 0, 77);
+    background-color:  #081b29;
 }
 /* =============================================== COMMON START ====================================== */
 section{
@@ -27,8 +29,26 @@ section{
     font-weight: 600;
     font-family: var(--title-text);
 }
+
+
+.social{
+    color: var(--font-color);
+    font-size: 30px;
+    padding: 10px 12px; 
+    border: 3px solid var(--font-color);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.social:hover{
+    color: #081b29;
+    background-color: var(--font-color);
+}
+
 /* ============================================== Navbar =============================================== */
 .nav{
+    z-index: 5;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255,0.2);
     width: 100%;
     height: 70px;
     display: flex;
@@ -96,8 +116,8 @@ section{
 } */
 
 .home_des{
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-family: var(--normal-text);
     font-weight: 600;
     color: var(--font-color);
 }
@@ -107,10 +127,11 @@ section{
 }
 
 .home_des > div > .home_des_des{
-    border-right: 4px solid var(--font-color);
+    border-right: 4px solid var(--border-color-about);
     width: fit-content;
     animation: textanim 4s linear infinite;
     overflow: hidden;
+    color: var(--border-color-about);
 } 
 @keyframes textanim{
     0%{
@@ -135,6 +156,7 @@ section{
 }
 .about-info{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -143,9 +165,92 @@ section{
     width: 50%;
 }
 
-.about-dis{
-    padding: 0% 10%;
+.about-dis, .about-img{
+    padding: 5%;
+}
+.about-img-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 300px;
+    box-shadow: 12px 0 15px -4px var(--border-color-about), -12px 0 10px -4px var(--border-color-about);
+    height: 300px;
+    position: relative;
 }
 
+.about_img_border{
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;    
+    border-left: 5px solid var(--border-color-about);
+    border-right: 5px solid var(--border-color-about);
+    animation: aboutimg 3s linear infinite;
+    z-index: 1;
+}
+@keyframes aboutimg{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
-/* ============================================== Responsice End ==================================== */
+.about-img > div > img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+}
+
+.about-dis{
+    color: var(--font-color);
+    font-family: var(--normal-text);
+    font-size: 28px;
+    text-align: center;
+}
+
+.about-dis button{
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--border-color-about);
+    color: #081b29;
+    font-size: 20px;
+    font-family: var(--normal-text);
+    font-weight: 600;
+    border: none;
+    transition: .3s;
+}
+
+.about-dis button:hover{
+    color: var(--border-color-about);
+    background-color: #081b29;
+}
+
+.about-topic{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about-topic .about-topic-box{
+    width: 450px;
+    height: 350px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    margin: 5% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-topic-cont{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+/* ============================================== Services ==================================== */
