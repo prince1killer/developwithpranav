@@ -1,0 +1,19 @@
+@media screen and (max-width: 840px){
+    .menu{
+        display: inline-block;
+        margin: 10px 60px;
+    }
+    .nav-list{
+        position: relative;
+        /* width: 100%; */
+    }
+    .nav-list-items{
+        /* display: none; */
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        flex-direction: column;
+        transition: 1s;
+    }
+
+}

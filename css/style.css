@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap');
+:root{
+  --normal-text: Caveat;
+  --title-text: Permanent Marker;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* =============================================== COMMON START ====================================== */
+section{
+    padding-top: 70px;
+}
+  
+/* ============================================== Navbar =============================================== */
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+/* .nav-list{
+    width: 80%;
+} */
+
+.nav-list-items{
+    display: flex;
+}
+
+.nav-list > ul > li{
+    list-style: none;
+}
+
+.nav-list > ul > li > a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--title-text);
+}
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 650;
+    font-size: 30px;
+}
+
+
+.menu{
+    padding: 10px 14px;
+    border: none;
+    display: none;
+
+}
+/* =========================================== Home ================================================== */
+#home{
+    width: 100%;
+    height: 100dvh;
+}
+
+.home_img, .home_des{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 10%;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.home_des{
+    background-color: red;
+}
+
+/* ============================================== Responsice Start ==================================== */
+
+/* ============================================== Responsice End ==================================== */
