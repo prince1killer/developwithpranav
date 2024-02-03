@@ -3,6 +3,7 @@
 :root{
   --normal-text: Caveat;
   --title-text: Permanent Marker;
+  --font-color: white;
 }
 
 *{
@@ -11,11 +12,21 @@
   box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(44, 0, 77);
+}
 /* =============================================== COMMON START ====================================== */
 section{
     padding-top: 70px;
 }
   
+
+.title{
+    color: var(--font-color);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--title-text);
+}
 /* ============================================== Navbar =============================================== */
 .nav{
     width: 100%;
@@ -41,7 +52,7 @@ section{
 .nav-list > ul > li > a{
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
     font-size: 20px;
     font-weight: 600;
     font-family: var(--title-text);
@@ -51,6 +62,7 @@ section{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 650;
     font-size: 30px;
+    color: var(--font-color);
 }
 
 
@@ -76,12 +88,64 @@ section{
     justify-content: center;
     flex-direction: column;
 }
-.home_des{
+/* .home_des{
     background-color: red;
 }
 .home_img{
     background-color: aqua;
+} */
+
+.home_des{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--font-color);
 }
-/* ============================================== Responsice Start ==================================== */
+
+.home_des>div{
+    width: fit-content;
+}
+
+.home_des > div > .home_des_des{
+    border-right: 4px solid var(--font-color);
+    width: fit-content;
+    animation: textanim 4s linear infinite;
+    overflow: hidden;
+} 
+@keyframes textanim{
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: calc(100% + 20px);
+    }
+    80%{
+        width: calc(100% + 20px);
+    }
+    100%{
+        width: 0%;
+    }
+}
+/* ============================================== About ==================================== */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-info > div{
+    width: 50%;
+}
+
+.about-dis{
+    padding: 0% 10%;
+}
+
 
 /* ============================================== Responsice End ==================================== */
